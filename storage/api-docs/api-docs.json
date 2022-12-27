@@ -1,0 +1,3139 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "L5 OpenApi",
+        "description": "L5 Swagger OpenApi description",
+        "contact": {
+            "email": "darius@matulionis.lt"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0",
+        "x-logo": {
+            "url": "https://via.placeholder.com/190x90.png?text=L5-Swagger"
+        }
+    },
+    "servers": [
+        {
+            "url": "https://politex.uz.napaautomotive.uz/",
+            "description": "SwaggerHUB API Mocking"
+        }
+    ],
+    "paths": {
+        "/api/allnewscategory": {
+            "get": {
+                "tags": [
+                    "AllnewsCategory"
+                ],
+                "summary": "All News",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "allnewscategories",
+                "parameters": [
+                    {
+                        "name": "All News",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/news",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/contacts": {
+            "get": {
+                "tags": [
+                    "Contact"
+                ],
+                "summary": "All contact",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getcontact",
+                "parameters": [
+                    {
+                        "name": "Contacts",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/contacts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/qabul": {
+            "get": {
+                "tags": [
+                    "Qabul"
+                ],
+                "summary": "All qabul",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getqabul",
+                "parameters": [
+                    {
+                        "name": "Qabul",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/contacts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/praper": {
+            "get": {
+                "tags": [
+                    "Prepare"
+                ],
+                "summary": "All contact",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getspraper",
+                "parameters": [
+                    {
+                        "name": "Contacts",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/contacts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/bussins": {
+            "get": {
+                "tags": [
+                    "Bussin"
+                ],
+                "summary": "All bussins",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getbussins",
+                "parameters": [
+                    {
+                        "name": "All bussins",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/bussins",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/studentmens": {
+            "get": {
+                "tags": [
+                    "Studentmen"
+                ],
+                "summary": "All studentmens",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getstudentmens",
+                "parameters": [
+                    {
+                        "name": "All studentmens",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/studentmens",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/students": {
+            "get": {
+                "tags": [
+                    "Student"
+                ],
+                "summary": "All students",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getstudents",
+                "parameters": [
+                    {
+                        "name": "All students",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/students",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getstudentsallbycategory/{category}": {
+            "get": {
+                "tags": [
+                    "Student"
+                ],
+                "summary": "All students",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getstudentsallbycategory",
+                "parameters": [
+                    {
+                        "name": "category",
+                        "in": "path",
+                        "description": "https://homeworking.uz/api/students",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getstudentsallMagistratura": {
+            "get": {
+                "tags": [
+                    "Student"
+                ],
+                "summary": "All students",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getstudentsallMagistratura",
+                "parameters": [
+                    {
+                        "name": "All students",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/students",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getstudentsbyid/{id}": {
+            "get": {
+                "tags": [
+                    "Student"
+                ],
+                "summary": "All students",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getstudentsbyid",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "https://homeworking.uz/api/students",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/bachelors": {
+            "get": {
+                "tags": [
+                    "Bachelor"
+                ],
+                "summary": "All bachelors",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getbachelors",
+                "parameters": [
+                    {
+                        "name": "All bachelors",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/bachelors",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/bachelorsbyid/{id}": {
+            "get": {
+                "tags": [
+                    "Bachelor"
+                ],
+                "summary": "All bachelors",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "bachelorsbyid",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "https://homeworking.uz/api/bachelors",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/masters": {
+            "get": {
+                "tags": [
+                    "Bachelor"
+                ],
+                "summary": "All bachelors",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getmasters",
+                "parameters": [
+                    {
+                        "name": "All masters",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/masters",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/extramunals": {
+            "get": {
+                "tags": [
+                    "Bachelor"
+                ],
+                "summary": "All extramunals",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getextramunals",
+                "parameters": [
+                    {
+                        "name": "All extramunals",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/extramunals",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/jointeducationals": {
+            "get": {
+                "tags": [
+                    "Bachelor"
+                ],
+                "summary": "All joint educationals",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getjointeducationals",
+                "parameters": [
+                    {
+                        "name": "All joint educationals",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/jointeducationals",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/foreigncitizens": {
+            "get": {
+                "tags": [
+                    "Bachelor"
+                ],
+                "summary": "All joint educationals",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getforeigncitizens",
+                "parameters": [
+                    {
+                        "name": "All foreign citizens",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/foreigncitizens",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/graduats": {
+            "get": {
+                "tags": [
+                    "Graduat"
+                ],
+                "summary": "All graduats",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getgraduats",
+                "parameters": [
+                    {
+                        "name": "All graduats",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/graduats",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/facultsinfo/1": {
+            "get": {
+                "tags": [
+                    "Faculties"
+                ],
+                "summary": "All facults info",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfacultsinfo",
+                "parameters": [
+                    {
+                        "name": "All facults info",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/facultsinfo/{id}",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/facults": {
+            "get": {
+                "tags": [
+                    "Facult"
+                ],
+                "summary": "All facults",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfacults",
+                "parameters": [
+                    {
+                        "name": "All facults",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/facults",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/nams": {
+            "get": {
+                "tags": [
+                    "Nam"
+                ],
+                "summary": "All nams",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getnams",
+                "parameters": [
+                    {
+                        "name": "All facults",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/nams",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/nams/{id}": {
+            "get": {
+                "tags": [
+                    "Nam"
+                ],
+                "summary": "get One Nams",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getOneNams",
+                "parameters": [
+                    {
+                        "name": "All facults",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/nams/{id}",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/news": {
+            "get": {
+                "tags": [
+                    "Allnews"
+                ],
+                "summary": "All News",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getnews",
+                "parameters": [
+                    {
+                        "name": "All News",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/news",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/slidernews": {
+            "get": {
+                "tags": [
+                    "Slider"
+                ],
+                "summary": "All News Slider",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getnewssliders",
+                "parameters": [
+                    {
+                        "name": "All News Slider",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/slidernews",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/news/1": {
+            "get": {
+                "tags": [
+                    "Allnews"
+                ],
+                "summary": "get One News",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getOneNews",
+                "parameters": [
+                    {
+                        "name": "All News",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/news/1",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getevents": {
+            "get": {
+                "tags": [
+                    "Allnews"
+                ],
+                "summary": "get Events",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getevents",
+                "parameters": [
+                    {
+                        "name": "All Events",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/getevents",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getoneevents/3": {
+            "get": {
+                "tags": [
+                    "Allnews"
+                ],
+                "summary": "get One Events",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getOneEvents",
+                "parameters": [
+                    {
+                        "name": "get One Events",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/getoneevents/3",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getannouncements": {
+            "get": {
+                "tags": [
+                    "Allnews"
+                ],
+                "summary": "get Announcements",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getannouncements",
+                "parameters": [
+                    {
+                        "name": "get Announcements",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/getannouncements",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getoneannouncements/4": {
+            "get": {
+                "tags": [
+                    "Allnews"
+                ],
+                "summary": "get One Announcements",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getOneAnnouncements",
+                "parameters": [
+                    {
+                        "name": "get Announcements",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/getoneannouncements/4",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getsports": {
+            "get": {
+                "tags": [
+                    "Allnews"
+                ],
+                "summary": "get sports",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getsports",
+                "parameters": [
+                    {
+                        "name": "get sports",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/getsports",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/allnews": {
+            "get": {
+                "tags": [
+                    "Allnews"
+                ],
+                "summary": "get sports",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getallnews",
+                "parameters": [
+                    {
+                        "name": "get sports",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/allnews",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getonesports/5": {
+            "get": {
+                "tags": [
+                    "Allnews"
+                ],
+                "summary": "get one sports",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getOneSports",
+                "parameters": [
+                    {
+                        "name": "get one sports",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/getonesports/5",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/facts": {
+            "get": {
+                "tags": [
+                    "Fact"
+                ],
+                "summary": "get facts",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfacts",
+                "parameters": [
+                    {
+                        "name": "get facts",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/facts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/congratulations": {
+            "get": {
+                "tags": [
+                    "Congratulation"
+                ],
+                "summary": "get congratulations",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getcongratulations",
+                "parameters": [
+                    {
+                        "name": "get facts",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/congratulations",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/rectorats": {
+            "get": {
+                "tags": [
+                    "Rectorat"
+                ],
+                "summary": "get rectorats",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getrectorats",
+                "parameters": [
+                    {
+                        "name": "get rectorats",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/rectorats",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/receptions": {
+            "get": {
+                "tags": [
+                    "Reception"
+                ],
+                "summary": "get Reception",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getReception",
+                "parameters": [
+                    {
+                        "name": "get Reception",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/receptions",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/add/receptions": {
+            "post": {
+                "tags": [
+                    "Reception"
+                ],
+                "summary": "get Reception",
+                "operationId": "postReception",
+                "requestBody": {
+                    "description": "https://homeworking.uz/api/add/receptions",
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "description": "Updated name of the pet",
+                                        "type": "string"
+                                    },
+                                    "phone": {
+                                        "description": "Enter product phone",
+                                        "type": "string"
+                                    },
+                                    "matn": {
+                                        "description": "Enter product matn",
+                                        "type": "string"
+                                    },
+                                    "mavsu": {
+                                        "description": "Enter product mavsu",
+                                        "type": "string"
+                                    },
+                                    "fayl": {
+                                        "description": "Enter product fayl",
+                                        "type": "file"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "405": {
+                        "description": "Invalid input"
+                    }
+                }
+            }
+        },
+        "/api/interactivservs": {
+            "get": {
+                "tags": [
+                    "Interactivserv"
+                ],
+                "summary": "get interactivservs",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getinteractivservs",
+                "parameters": [
+                    {
+                        "name": "get interactivservs",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/interactivservs",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/charters": {
+            "get": {
+                "tags": [
+                    "Charter"
+                ],
+                "summary": "get charters",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getcharters",
+                "parameters": [
+                    {
+                        "name": "get charters",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/charters",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/centers": {
+            "get": {
+                "tags": [
+                    "Center"
+                ],
+                "summary": "get centers",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getcenters",
+                "parameters": [
+                    {
+                        "name": "get centers",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/centers",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/centerabouts": {
+            "get": {
+                "tags": [
+                    "Centerabout"
+                ],
+                "summary": "get centers abouts",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getcenterabouts",
+                "parameters": [
+                    {
+                        "name": "get center abouts",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/centerabouts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getcenteraboutsById/{id}": {
+            "get": {
+                "tags": [
+                    "Centerabout"
+                ],
+                "summary": "get centers abouts by id",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getcenteraboutsById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "https://homeworking.uz/api/centerabouts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/departments": {
+            "get": {
+                "tags": [
+                    "Department"
+                ],
+                "summary": "get Department",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getdepartments",
+                "parameters": [
+                    {
+                        "name": "get departments",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/departments",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/departmentabouts": {
+            "get": {
+                "tags": [
+                    "Departmentabout"
+                ],
+                "summary": "get Department about",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getdepartmentabouts",
+                "parameters": [
+                    {
+                        "name": "get Department about",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/departmentabouts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getdepartmentaboutById/{id}": {
+            "get": {
+                "tags": [
+                    "Departmentabout"
+                ],
+                "summary": "get Department about by id",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getdepartmentaboutById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "https://homeworking.uz/api/centerabouts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/architecturals": {
+            "get": {
+                "tags": [
+                    "Architectural"
+                ],
+                "summary": "get architecturals",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getarchitecturals",
+                "parameters": [
+                    {
+                        "name": "get architecturals",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/architecturals",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/sliders": {
+            "get": {
+                "tags": [
+                    "Slider"
+                ],
+                "summary": "get sliders",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getsliders",
+                "parameters": [
+                    {
+                        "name": "get sliders",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/sliders",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/histors": {
+            "get": {
+                "tags": [
+                    "Histor"
+                ],
+                "summary": "get histors",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "gethistors",
+                "parameters": [
+                    {
+                        "name": "get histors",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/histors",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/sliders/1": {
+            "get": {
+                "tags": [
+                    "Histor"
+                ],
+                "summary": "get histors",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getOneSliders",
+                "parameters": [
+                    {
+                        "name": "get one slider",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/sliders/1",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/nams/count/1": {
+            "get": {
+                "tags": [
+                    "Nam"
+                ],
+                "summary": "get one nams",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getNewsPag",
+                "parameters": [
+                    {
+                        "name": "get one nams",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/nams/count/1",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/graduats/count/1": {
+            "get": {
+                "tags": [
+                    "Graduat"
+                ],
+                "summary": "get one graduate",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getGraduatsPag",
+                "parameters": [
+                    {
+                        "name": "get one graduate",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/graduats/count/1",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/rectorats/count/{id}": {
+            "get": {
+                "tags": [
+                    "Rectorat"
+                ],
+                "summary": "get rectorats page",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getRektoratsPag",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "https://homeworking.uz/api/rectorats/count/1",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/onerectorat/2": {
+            "get": {
+                "tags": [
+                    "Rectorat"
+                ],
+                "summary": "get one rectorat",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getOneRektorat",
+                "parameters": [
+                    {
+                        "name": "get one rectorats",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/onerectorat/1",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/facultydirectors": {
+            "get": {
+                "tags": [
+                    "Facultydirector"
+                ],
+                "summary": "get faculty directors",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfacultydirectors",
+                "parameters": [
+                    {
+                        "name": "get faculty directors",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/facultydirectors",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/allfaculties": {
+            "get": {
+                "tags": [
+                    "Faculties"
+                ],
+                "summary": "get faculties",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getallfaculties",
+                "parameters": [
+                    {
+                        "name": "get faculties",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/allfaculties",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/facultymembers": {
+            "get": {
+                "tags": [
+                    "Facultymember"
+                ],
+                "summary": "get faculty members",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfacultymembers",
+                "parameters": [
+                    {
+                        "name": "get faculty members",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/facultymembers",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/facultyabouts": {
+            "get": {
+                "tags": [
+                    "Facultyabout"
+                ],
+                "summary": "get faculty abouts",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfacultyabouts",
+                "parameters": [
+                    {
+                        "name": "get faculty abouts",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/facultyabouts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/kafedramenu": {
+            "get": {
+                "tags": [
+                    "kafedramenu"
+                ],
+                "summary": "get all kafedramenu",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getkafedramenu",
+                "parameters": [
+                    {
+                        "name": "get all kafedramenu",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/kafedramenu",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/kafedrainfo/1": {
+            "get": {
+                "tags": [
+                    "KafedraInfo"
+                ],
+                "summary": "get all kafedrainfo",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getkafedrainfo",
+                "parameters": [
+                    {
+                        "name": "get all kafedrainfo",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/kafedrainfo/{id}",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/kafedradirectors": {
+            "get": {
+                "tags": [
+                    "Kafedradirector"
+                ],
+                "summary": "get kafedra mens",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getkafedradirectors",
+                "parameters": [
+                    {
+                        "name": "get kafedra directors",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/kafedradirectors",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/kafedraworkers": {
+            "get": {
+                "tags": [
+                    "Kafedraworker"
+                ],
+                "summary": "get kafedra workers",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getkafedraworkers",
+                "parameters": [
+                    {
+                        "name": "get kafedra workers",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/kafedraworkers",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/kafedraabouts": {
+            "get": {
+                "tags": [
+                    "Kafedraabout"
+                ],
+                "summary": "get kafedra abouts",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getkafedraabouts",
+                "parameters": [
+                    {
+                        "name": "get kafedra abouts",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/kafedraabouts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/captcha": {
+            "get": {
+                "tags": [
+                    "getcaptcha"
+                ],
+                "summary": "get captcha",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getcaptcha",
+                "parameters": [
+                    {
+                        "name": "get captcha",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/captcha",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/filialdirectors": {
+            "get": {
+                "tags": [
+                    "Filialdirector"
+                ],
+                "summary": "get filialdirectors",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfilialdirectors",
+                "parameters": [
+                    {
+                        "name": "get filialdirectors",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/filialdirectors",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/filialabouts": {
+            "get": {
+                "tags": [
+                    "Filialabout"
+                ],
+                "summary": "get filialdirectors",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfilialabouts",
+                "parameters": [
+                    {
+                        "name": "get filialabouts",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/filialabouts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getfilialaboutsById/{id}": {
+            "get": {
+                "tags": [
+                    "Filialabout"
+                ],
+                "summary": "get Department about by id",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfilialaboutsById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "https://homeworking.uz/api/centerabouts",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/applicantmens": {
+            "get": {
+                "tags": [
+                    "Applicantmen"
+                ],
+                "summary": "get applicantmens",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getapplicantmens",
+                "parameters": [
+                    {
+                        "name": "get applicantmens",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/applicantmens",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/uniquelinks": {
+            "get": {
+                "tags": [
+                    "Uniquelink"
+                ],
+                "summary": "get uniquelinks",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getuniquelinks",
+                "parameters": [
+                    {
+                        "name": "get uniquelinks",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/uniquelinks",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/corruptionsectors/{corruptionmen}": {
+            "get": {
+                "tags": [
+                    "Corruptionmen"
+                ],
+                "summary": "get Corruptionmen",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getcorruptionsectors",
+                "parameters": [
+                    {
+                        "name": "get uniquelinks",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/corruptionsectors/{corruptionmen}",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/corruptionmens": {
+            "get": {
+                "tags": [
+                    "Corruptionmen"
+                ],
+                "summary": "get Corruptionmen",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getcorruptionmens",
+                "parameters": [
+                    {
+                        "name": "get corruptionmens",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/corruptionmens",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/techniqs": {
+            "get": {
+                "tags": [
+                    "Techniq"
+                ],
+                "summary": "get techniqs",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "gettechniqs",
+                "parameters": [
+                    {
+                        "name": "get techniqs",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/techniqs",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/gettechniqsfile/{category}": {
+            "get": {
+                "tags": [
+                    "Techniq"
+                ],
+                "summary": "get techniqs",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "gettechniqsfile",
+                "parameters": [
+                    {
+                        "name": "category",
+                        "in": "path",
+                        "description": "https://homeworking.uz/api/techniqs",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "Texnika yulduzlari",
+                            "enum": [
+                                "Texnika yulduzlari",
+                                "Ta’lim tizimida ijtimoiy gumanitar fanlar",
+                                "Yosh texnika yulduzlari"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/masterylessons": {
+            "get": {
+                "tags": [
+                    "Techniq"
+                ],
+                "summary": "get masterylessons",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getmasterylessons",
+                "parameters": [
+                    {
+                        "name": "get masterylessons",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/masterylessons",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/rekvizts": {
+            "get": {
+                "tags": [
+                    "Rekvizts"
+                ],
+                "summary": "get fans",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getrekvizts",
+                "parameters": [
+                    {
+                        "name": "get fans",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/fans",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/fans": {
+            "get": {
+                "tags": [
+                    "Fan"
+                ],
+                "summary": "get fans",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfans",
+                "parameters": [
+                    {
+                        "name": "get fans",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/fans",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/inovations": {
+            "get": {
+                "tags": [
+                    "Inovation"
+                ],
+                "summary": "get inovations",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getinovations",
+                "parameters": [
+                    {
+                        "name": "get inovations",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/inovations",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/doctorals": {
+            "get": {
+                "tags": [
+                    "Inovation"
+                ],
+                "summary": "get doctorals",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getdoctorals",
+                "parameters": [
+                    {
+                        "name": "get doctorals",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/doctorals",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/finances": {
+            "get": {
+                "tags": [
+                    "Finance"
+                ],
+                "summary": "get finances",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getfinances",
+                "parameters": [
+                    {
+                        "name": "get finances",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/finances",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/youngs": {
+            "get": {
+                "tags": [
+                    "Young"
+                ],
+                "summary": "get youngs",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getyoungs",
+                "parameters": [
+                    {
+                        "name": "get youngs",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/youngs",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/culturals": {
+            "get": {
+                "tags": [
+                    "Cultural"
+                ],
+                "summary": "get culturals",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getculturals",
+                "parameters": [
+                    {
+                        "name": "get culturals",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/culturals",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/creatives": {
+            "get": {
+                "tags": [
+                    "Creative"
+                ],
+                "summary": "get creatives",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getcreatives",
+                "parameters": [
+                    {
+                        "name": "get creatives",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/creatives",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/erasmus": {
+            "get": {
+                "tags": [
+                    "Erasmu"
+                ],
+                "summary": "get erasmus",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "geterasmus",
+                "parameters": [
+                    {
+                        "name": "get erasmus",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/erasmus",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/mechauzs": {
+            "get": {
+                "tags": [
+                    "Mechauz"
+                ],
+                "summary": "get mechauzs",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getmechauzs",
+                "parameters": [
+                    {
+                        "name": "get mechauzs",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/mechauzs",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/spaces": {
+            "get": {
+                "tags": [
+                    "Space"
+                ],
+                "summary": "get spaces",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getspaces",
+                "parameters": [
+                    {
+                        "name": "get spaces",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/spaces",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/raqamlis": {
+            "get": {
+                "tags": [
+                    "Raqamli"
+                ],
+                "summary": "get raqamlis",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getraqamlis",
+                "parameters": [
+                    {
+                        "name": "get raqamlis",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/raqamlis",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/mixtures": {
+            "get": {
+                "tags": [
+                    "Mixture"
+                ],
+                "summary": "get mixtures",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getmixtures",
+                "parameters": [
+                    {
+                        "name": "get mixtures",
+                        "in": "query",
+                        "description": "https://homeworking.uz/api/mixtures",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "string",
+                            "default": "available",
+                            "enum": [
+                                "available",
+                                "pending",
+                                "sold"
+                            ]
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/getmixturesbyid/{id}": {
+            "get": {
+                "tags": [
+                    "Mixture"
+                ],
+                "summary": "get mixtures",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "getmixturesbyid",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "https://homeworking.uz/api/mixtures",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/muhumElonlar": {
+            "get": {
+                "tags": [
+                    "MuhumElonlar"
+                ],
+                "summary": "get mixtures",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "muhumElonlar",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/internationalconnection/": {
+            "get": {
+                "tags": [
+                    "InternationalConnection"
+                ],
+                "summary": "get mixtures",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "internationalconnection",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/api/internationalConnectionWorker/": {
+            "get": {
+                "tags": [
+                    "InternationalConnection"
+                ],
+                "summary": "get mixtures",
+                "description": "Multiple status values can be provided with comma separated string",
+                "operationId": "internationalConnectionWorker",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        }
+    }
+}
